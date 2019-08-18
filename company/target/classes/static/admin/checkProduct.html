@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/colResizable-1.3.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script src="/js/jquery/jquery.form.js"></script>
+    <script src="/js/moment/moment.min.js"></script>
+    <script src="/js/numeral/chs.min.js"></script>
+    <script src="/js/common/base.js"></script>
+    <script src="/js/common/normal.js"></script>
+    <script type="text/javascript"></script>
+
+    <title>Document</title>
+    <style>
+        #div1{
+            float: left;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        #div2{
+            float: left;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="aaa" class="mt10">
+    <div class="box">
+        <div class="box_border">
+            <div class="box_top"><b class="pl15">产品详情</b></div>
+            <div class="td_center" id="div1">
+                <img src="" id="pictureShow" width="300px" height="300px">
+            </div>
+            <div class="box_center" id="div2">
+                <form action=""  class="jqtransform">
+                    <table class="form_table pt15 pb15" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="td_right">产品编号：</td>
+                            <td><input type="text" readonly="readonly" id="productId" name="productId" value=""class="input-text lh30" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">产品序列号：</td>
+                            <td class="">
+                                <input type="text" readonly="readonly" id="serialNumber" name="serialNumber" class="input-text lh30" size="40">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">产品名称：</td>
+                            <td class="">
+                                <input type="text" readonly="readonly" name="name" id="name"  class="input-text lh30" size="40">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">产品品牌：</td>
+                            <td><input type="text" readonly="readonly" name="brand" class="input-text lh30" size="40" id="brand">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">产品型号：</td>
+                            <td><input type="text" readonly="readonly" name="model" class="input-text lh30" size="40" id="model">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">产品价格：</td>
+                            <td><input type="text" readonly="readonly" name="price" class="input-text lh30" size="40" id="price">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_right">产品介绍：</td>
+                            <td><input type="text" readonly="readonly" name="description" class="input-text lh30" size="40" id="description">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var id= $.getHrefParam("id");
+        $.post("/product/getAllProductById",{"id":id},function (result){
+            var obj = $.dealJSONObj(result);
+            var id = obj.data.productId;
+            var serialNumber = obj.data.serialNumber;
+            var name = obj.data.name;
+            var brand = obj.data.brand;
+            var model = obj.data.model;
+            var price = obj.data.price;
+            var picture= obj.data.picture;
+            var description = obj.data.description;
+
+            $("#id").html(id);
+            $("#productId").val(id);
+            $("#serialNumber").val(serialNumber);
+            $("#name").val(name);
+            $("#brand").val(brand);
+            $("#model").val(model);
+            $("#price").val(price);
+            $("#description").val(description);
+            document.getElementById("pictureShow").src="/image/" + picture;
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zryx.company.mapper.MessageMapper">
+
+    <select id="getALLMessage" resultType="com.zryx.company.model.Message"  >
+     SELECT * FROM message order by writeDate desc
+ </select>
+
+    <insert id="addMessage" parameterType="com.zryx.company.model.Message">
+     INSERT INTO message VALUE(NULL,#{title},#{content},#{writer} ,#{writeDate},#{count})
+ </insert>
+
+    <delete id="delMessage">
+  DELETE FROM message WHERE messageId = #{messageId}
+ </delete>
+
+    <update id="updMessage" parameterType="com.zryx.company.model.Message">
+  UPDATE message SET title=#{title},content=#{content},writer=#{writer} ,writeDate=#{writeDate},count=#{count}  WHERE messageId=#{messageId}
+ </update>
+
+    <select id="getMessageById" resultType="com.zryx.company.model.Message">
+        select * from message where messageId= #{messageId}
+    </select>
+
+    <select id="getMessageByPage" resultType="com.zryx.company.model.Message">
+        SELECT * FROM message order by writeDate desc LIMIT #{from},#{size}
+    </select>
+
+    <select id="dataCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM message
+    </select>
+
+</mapper>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--引用jQuery的脚本库，注意，引用jQuery的脚本库必须要放在第一句-->
+    <script src="/js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="/js/jquery/jquery.form.js"></script>
+    <script src="/js/moment/moment.min.js"></script>
+    <script src="/js/numeral/numeral.min.js"></script>
+    <script src="/js/numeral/chs.min.js"></script>
+    <script src="/js/common/base.js"></script>
+    <script src="/js/common/normal.js"></script>
+
+</head>
+<body>
+<table border="1" style="margin:auto;margin-top:100px">
+    <caption align="center" style="color:red;font-size:72px">消息信息列表</caption>
+    <thead>
+    <tr>
+        <th>消息编号</th>
+        <th>消息标题</th>
+        <th>消息内容</th>
+        <th>发表作者</th>
+        <th>发表日期</th>
+        <th>数量</th>
+        <th>操&nbsp;&nbsp;&nbsp;&nbsp;作</th>
+    </tr>
+    </thead>
+    <tbody id="data">
+
+    </tbody>
+</table>
+<form id="ff">
+    <table style="margin: auto">
+        <tr>
+            <td>编号<input type="hidden" id="messageId" name="messageId" value=""></td>
+            <!--type="hidden"叫做隐藏域，它不是用来让用户看的，而是用来向服务器传递一个值-->
+            <td id="id"></td>
+        </tr>
+        <tr>
+            <td>标题</td>
+            <td><input type="text" name="title" id="title" size="30"></td>
+        </tr>
+        <tr>
+            <td>内容</td>
+            <td>
+                <textarea name="content" id="content" cols="80" rows="8">
+
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>作者</td>
+            <td>
+                <input type="text" name="writer" id="writer">
+            </td>
+        </tr>
+        <tr>
+            <td>日期</td>
+            <td>
+                <input type="date" name="writeDate" id="writeDate">
+            </td>
+        </tr>
+        <tr>
+            <td>数量</td>
+            <td>
+                <input type="text" name="count" id="count">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="修改" onclick="upd()">
+            </td>
+        </tr>
+    </table>
+</form>
+<form id="dd">
+    <table style="margin: auto">
+        <tr>
+            <td>编号<input type="hidden" id="newsIdd" name="messageId" value="999"></td>
+            <!--type="hidden"叫做隐藏域，它不是用来让用户看的，而是用来向服务器传递一个值-->
+            <td id="idd"></td>
+        <tr>
+            <td>标题</td>
+            <td><input type="text" name="title" id="til" size="30"></td>
+        </tr>
+        <tr>
+            <td>内容</td>
+            <td>
+                <textarea name="content" id="con" cols="80" rows="8">
+
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>作者</td>
+            <td>
+                <input type="text" name="writer" id="wri">
+            </td>
+        </tr>
+        <tr>
+            <td>日期</td>
+            <td>
+                <input type="date" name="writeDate" id="dat">
+            </td>
+        </tr>
+        <tr>
+            <td>数量</td>
+            <td>
+                <input type="text" name="count" id="num">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="添加" onclick="add()">
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    /*
+    * $(function(){})
+    * 就是jQuery当中的一个初始化函数
+    * 它在加载完页面文档之后会自动执行
+    * */
+    $(function () {
+        initMessage();
+    })
+
+    function initMessage() {
+        $.post("initMessage", function (result) {
+            //用来解析json
+            var obj = $.dealJSONObj(result);
+            //code会返回一个0或者非0的数字，如果0，使用!obj.code就返回true，表示查询成功
+            if (!obj.code) {
+                var s = "";
+                //创建了一个带有占位符的字符串
+                //JavaScript:void(0)表示点击超链接的时候不会跳转到任何一个地址
+                var str = "<tr>\n    <td>{0}</td>\n    <td>{1}</td>\n    <td>{2}</td>    <td>{3}</td>    <td>{4}</td>\n    " +
+                    "<td>{5}</td>\n<td>" +
+                    "<a href='javascript:void(0)' onclick='details(this)'>查看</a>&nbsp;&nbsp;&nbsp;" +
+                    "<a href='javascript:void(0)' onclick='del({6})'>删除</a></td>\n</tr>";
+                //$.each就可以遍历集合，其中的v就相当于是一个news对象
+                $.each(obj.data, function (k, v) {
+                    s += str.formatStr(
+                        v.messageId, //得到新闻id
+                        v.title,  //得到新闻标题
+                        v.content,//新闻内容
+                        v.writer,
+                        //v.writeDate //日期
+                        moment(v.writeDate, 'x').format("YYYY-MM-DD"),
+                        v.count,
+                        v.messageId
+                    )
+                })
+                $("#data").empty(); //$("#data")叫做jQuery的选择器，它是一个id选择器，用来得到id值为data的一个节点
+                $("#data").html(s);
+            } else {
+                alert(obj.msg);
+            }
+        })
+    }
+
+    /**
+     * 删除新闻
+     * @param id
+     */
+    function del(id) {
+        $.post("delMessage", {"id": id}, function (result) {
+            var obj = $.dealJSONObj(result);
+            if (!obj.code) {
+                //删除成功则再次调用初始化查询新闻的方法。
+                initMessage();
+            }
+        })
+    }
+    /**
+     * 查看新闻。这时候就需要使用jQuery的dom操作。
+     * @param a
+     */
+    function details(a) {
+        //$(a)就会将一个dom节点转换成jQuery节点
+        var id = $(a).parent().parent().children().eq(0).html();
+        var title = $(a).parent().parent().children().eq(1).html();
+        var content = $(a).parent().parent().children().eq(2).html();
+        var writer = $(a).parent().parent().children().eq(3).html();
+        var writeDate = $(a).parent().parent().children().eq(4).html();
+        var count = $(a).parent().parent().children().eq(5).html();
+        $("#id").html(id);
+        $("#messageId").val(id);
+        $("#title").val(title);
+        $("#content").val(content);
+        $("#writer").val(writer);
+        $("#writeDate").val(writeDate);
+        $("#count").val(count);
+    }
+
+    /**
+     * 修改信息
+     * $("#ff").serialize()叫做表单序列化
+     */
+    function upd() {
+        $.post("updMessage",$("#ff").serialize(),function (result) {
+            var obj = $.dealJSONObj(result);
+            if(!obj.code) {
+                initMessage();
+            }
+        })
+    }
+
+    /**
+     * 添加信息
+     */
+
+    function add(){
+        $.post("addMessage",$("#dd").serialize(),function (result) {
+            var obj = $.dealJSONObj(result);
+            if(!obj.code) {
+                initMessage();
+            }
+        })
+    }
+</script>
+</body>
+</html>

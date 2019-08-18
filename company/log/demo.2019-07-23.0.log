@@ -1,0 +1,3007 @@
+2019-07-23 08:32:38,029 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-7TTQDPL with PID 9408 (G:\scsx\Student\recv\company\company\target\classes started by luojun in G:\scsx\Student\recv\company\company)
+2019-07-23 08:32:38,042 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 08:32:38,042 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 08:32:41,794 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 4.587 seconds (JVM running for 8.366)
+2019-07-23 08:37:06,569 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product 
+2019-07-23 08:37:06,569 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 08:37:06,594 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 08:37:06,594 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 08:37:06,628 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 08:37:06,629 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-07-23 09:21:41,080 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product 
+2019-07-23 09:21:41,080 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 09:21:41,082 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:21:41,082 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:21:41,086 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-07-23 09:21:41,091 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 09:25:48,485 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:25:48,486 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:25:48,493 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:25:48,497 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:08,547 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:08,549 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:08,553 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:08,555 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:11,319 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:11,320 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:11,329 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:11,332 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:12,082 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:12,083 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:12,087 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:12,088 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:13,001 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:13,002 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:13,004 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:13,006 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:13,675 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:13,676 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:13,678 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:13,680 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:14,270 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:14,271 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:14,273 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:14,275 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:14,751 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:14,752 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:14,754 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:14,755 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:15,429 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:15,431 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:15,434 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:15,436 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:27:53,770 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:27:53,771 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:27:53,786 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:27:53,788 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:28:37,421 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:28:37,422 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:28:37,424 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:28:37,426 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:28:51,312 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:28:51,315 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:28:51,319 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:28:51,322 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:29:02,910 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:29:02,911 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:29:02,914 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:29:02,915 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:29:03,912 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM message 
+2019-07-23 09:29:03,913 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:29:03,916 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 6
+2019-07-23 09:29:03,917 DEBUG (MessageController.java:23)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "messageId" : 1,
+    "title" : "价格最低的MP4",
+    "content" : "价格最低的MP4是什么牌子？价格是多少？",
+    "writer" : "zzg",
+    "writeDate" : 1563321600000,
+    "count" : 1
+  }, {
+    "messageId" : 2,
+    "title" : "(NULL品红服务宗旨是什么)",
+    "content" : "品红服务宗旨是：为用户服务",
+    "writer" : "bobo",
+    "writeDate" : 1562889600000,
+    "count" : 0
+  }, {
+    "messageId" : 3,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "xss",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 5,
+    "title" : "haha",
+    "content" : "haha",
+    "writer" : "hahah",
+    "writeDate" : 1546992000000,
+    "count" : 11
+  }, {
+    "messageId" : 7,
+    "title" : "航空母舰",
+    "content" : "出行利器",
+    "writer" : "哈哈",
+    "writeDate" : 1563206400000,
+    "count" : 100
+  }, {
+    "messageId" : 15,
+    "title" : "测试",
+    "content" : "测试内容",
+    "writer" : "作者",
+    "writeDate" : 1563148800000,
+    "count" : 100
+  } ]
+}
+2019-07-23 09:44:16,965 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 1076 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 09:44:16,975 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 09:44:16,975 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 09:45:14,496 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 10084 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 09:45:14,499 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 09:45:14,500 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 09:45:16,744 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 2.72 seconds (JVM running for 3.797)
+2019-07-23 09:45:30,214 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 09:45:30,214 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product 
+2019-07-23 09:45:30,235 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:45:30,235 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:45:30,264 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 09:45:30,266 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 09:45:39,202 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 09:45:39,202 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product 
+2019-07-23 09:45:39,203 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:45:39,203 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:45:39,208 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 09:45:39,211 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 09:52:30,278 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product 
+2019-07-23 09:52:30,278 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 09:52:30,279 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:52:30,279 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:52:30,282 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 09:52:30,282 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 09:52:34,805 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product 
+2019-07-23 09:52:34,805 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 09:52:34,806 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:52:34,806 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:52:34,809 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 09:52:34,809 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 09:55:12,963 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 10084 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 09:55:12,963 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 09:55:12,963 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 09:55:30,568 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 10084 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 09:55:30,570 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 09:55:30,571 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 09:56:09,831 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 10084 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 09:56:09,831 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 09:56:09,831 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 09:56:10,653 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 0.872 seconds (JVM running for 657.7)
+2019-07-23 09:59:21,105 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 13912 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 09:59:21,105 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 09:59:21,105 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 09:59:24,359 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 3.72 seconds (JVM running for 4.896)
+2019-07-23 09:59:35,744 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 09:59:35,777 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 09:59:35,817 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 10:00:05,986 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 10:00:05,988 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 10:00:05,995 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 10:00:32,731 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 10:00:32,732 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 10:00:32,735 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 10:02:56,079 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 13912 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 10:02:56,080 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 10:02:56,080 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 10:02:57,263 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 1.216 seconds (JVM running for 217.804)
+2019-07-23 10:04:24,933 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 10:04:24,937 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 10:04:24,944 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 10:04:24,959 DEBUG (ProductController.java:22)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 10:05:02,996 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 13912 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 10:05:02,996 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 10:05:02,996 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 10:05:04,310 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 1.344 seconds (JVM running for 344.85)
+2019-07-23 10:08:43,084 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 10:08:43,087 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 10:08:43,092 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 10:08:43,099 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 10:08:43,100 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 10:08:43,111 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 10:08:43,125 DEBUG (ProductController.java:22)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 14:30:49,612 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 19448 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 14:30:49,612 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 14:30:49,612 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 14:30:52,145 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 3.052 seconds (JVM running for 4.221)
+2019-07-23 14:31:00,851 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 14:31:00,851 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 14:31:00,871 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 14:31:00,871 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 14:31:00,891 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 14:31:00,950 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 14:31:00,959 DEBUG (ProductController.java:22)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 14:31:03,351 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 14:31:03,352 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 14:31:03,354 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 14:31:03,354 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 14:31:03,359 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 14:31:03,360 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 14:31:03,365 DEBUG (ProductController.java:22)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 15:57:59,324 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 15:57:59,324 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 15:57:59,331 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 15:57:59,331 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 15:57:59,340 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 15:57:59,353 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 15:57:59,357 DEBUG (ProductController.java:22)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 15:58:03,847 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 15:58:03,852 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 15:58:03,853 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 15:58:03,854 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 15:58:03,856 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 15:58:03,857 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 15:58:03,858 DEBUG (ProductController.java:22)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:28:29,440 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 19448 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 16:28:29,440 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 16:28:29,440 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 16:28:30,440 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 1.05 seconds (JVM running for 7062.525)
+2019-07-23 16:29:48,968 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:29:48,975 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:29:48,979 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:29:48,993 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:29:48,995 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:29:49,002 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:29:49,002 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:29:54,400 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:29:54,401 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:29:54,413 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:29:54,418 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:29:54,422 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:29:54,423 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:29:54,429 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:33:30,020 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:33:30,021 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:33:30,021 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:33:30,021 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:33:30,024 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:33:30,024 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:33:30,025 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:36:20,929 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:36:20,930 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:36:20,930 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:36:20,931 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:36:20,933 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:36:20,934 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:36:20,935 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:37:31,732 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:37:31,733 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:37:31,733 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:37:31,739 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:37:31,740 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:37:31,741 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:37:31,743 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:48:39,949 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:48:39,949 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:48:39,950 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:48:39,952 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:48:39,954 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:48:39,957 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:48:39,959 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:49:54,775 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:49:54,775 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:49:54,776 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:49:54,776 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:49:54,779 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 16:49:54,779 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:49:54,780 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:49:58,733 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 16:49:58,734 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:49:58,735 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 16:49:58,736 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 16:49:58,737 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 16:49:58,738 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 16:49:58,740 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:03:35,848 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:03:35,848 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:03:35,856 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:03:35,863 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:03:35,866 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:03:35,868 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:03:35,869 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:03:36,758 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 19448 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 17:03:36,758 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 17:03:36,759 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 17:03:38,003 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 1.28 seconds (JVM running for 9170.079)
+2019-07-23 17:03:41,594 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:03:41,600 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:03:41,602 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:03:41,604 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:03:41,605 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:03:41,608 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:03:41,623 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:06:29,969 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:06:29,971 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:06:29,976 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:06:29,976 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:06:29,979 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:06:29,982 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:06:29,983 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:17:57,622 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 19448 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 17:17:57,622 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 17:17:57,622 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 17:17:58,593 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 1.001 seconds (JVM running for 10030.671)
+2019-07-23 17:33:19,787 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:33:19,790 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:33:19,793 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:33:19,794 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:33:19,795 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:33:19,798 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:33:19,812 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:33:22,053 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:33:22,054 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:33:22,055 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:33:22,055 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:33:22,061 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:33:22,064 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:33:22,069 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:33:42,635 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 19700 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 17:33:42,635 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 17:33:42,635 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 17:33:44,902 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 2.747 seconds (JVM running for 4.376)
+2019-07-23 17:33:56,603 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:33:56,603 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:33:56,646 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:33:56,646 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:33:56,677 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:33:56,677 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:33:56,722 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:34:00,752 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:34:00,754 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:34:00,755 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:34:00,758 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:34:00,766 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:34:00,766 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:34:00,770 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 17:34:06,148 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 17:34:06,149 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:34:06,149 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 17:34:06,150 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 17:34:06,154 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 17:34:06,155 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 17:34:06,156 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 19:24:48,939 INFO (StartupInfoLogger.java:50)- Starting CompanyApplication on DESKTOP-8L1UIJU with PID 1260 (D:\company\target\classes started by 用户 in D:\company)
+2019-07-23 19:24:48,949 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-23 19:24:48,949 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
+2019-07-23 19:24:51,369 INFO (StartupInfoLogger.java:59)- Started CompanyApplication in 3.01 seconds (JVM running for 4.583)
+2019-07-23 19:25:28,195 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 19:25:28,195 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 19:25:28,223 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 19:25:28,223 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 19:25:28,251 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 19:25:28,251 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 19:25:28,284 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}
+2019-07-23 19:34:24,053 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-07-23 19:34:24,054 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 19:34:24,055 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-07-23 19:34:24,056 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-07-23 19:34:24,060 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 8
+2019-07-23 19:34:24,061 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 9
+2019-07-23 19:34:24,065 DEBUG (ProductController.java:29)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123axx",
+    "price" : 80005,
+    "picture" : "hulu4.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 19,
+    "serialNumber" : "z11",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "b77",
+    "price" : 190,
+    "picture" : "hulu1.jpg",
+    "description" : "葫芦鞋"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  }, {
+    "productId" : 8,
+    "serialNumber" : "sa1980",
+    "name" : "索爱手机",
+    "brand" : "索爱",
+    "model" : "1980",
+    "price" : 5000,
+    "picture" : "d_r11_10_r1_c221.jpg",
+    "description" : "索爱最新产品"
+  }, {
+    "productId" : 21,
+    "serialNumber" : "z12",
+    "name" : "鞋子",
+    "brand" : "回力",
+    "model" : "v11",
+    "price" : 201,
+    "picture" : "hulu3.jpg",
+    "description" : "葫芦鞋哈哈哈"
+  } ]
+}

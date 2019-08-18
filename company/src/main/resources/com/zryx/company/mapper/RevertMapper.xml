@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zryx.company.mapper.RevertMapper">
+    <select id="getRvertByMessageId" resultType="com.zryx.company.model.Revert">
+        SELECT * FROM revert WHERE messageId = #{id}
+    </select>
+
+    <insert id="addRevert" parameterType="com.zryx.company.model.Revert">
+        INSERT INTO revert VALUES(NULL,#{messageId},#{content},#{writer},#{writerDate})
+    </insert>
+
+    <delete id="delRevert">
+          DELETE FROM revert WHERE revertId = #{revertId}
+    </delete>
+
+
+</mapper>

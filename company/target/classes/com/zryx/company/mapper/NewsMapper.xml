@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zryx.company.mapper.NewsMapper">
+    <select id="getAllNews" resultType="com.zryx.company.model.News">
+        SELECT * FROM news order by writeDate desc
+    </select>
+
+    <!--在xml当中添加注释的快捷键是ctrl+shift+/ 以尖括号叹号和两个横杆开始，以两个横杠和小尖括号结束，
+    不能使用java的多行注释-->
+    <insert id="addNews" parameterType="com.zryx.company.model.News">
+        INSERT INTO news VALUES(NULL,#{title},#{content} ,#{writeDate})
+    </insert>
+
+    <delete id="delNews">
+        DELETE FROM news WHERE newsId = #{nId}
+    </delete>
+
+    <update id="updNews" parameterType="com.zryx.company.model.News">
+        UPDATE news SET title=#{title} ,content=#{content} ,writeDate=#{writeDate}  WHERE newsId = #{newsId}
+    </update>
+
+    <select id="getNewsById" resultType="com.zryx.company.model.News">
+        SELECT * FROM news where newsId = #{id} order by newsId
+    </select>
+
+    <select id="selTop8News" resultType="com.zryx.company.model.News">
+        select * from news order by writeDate desc limit 0,8
+    </select>
+
+    <select id="getNewsByPage" resultType="com.zryx.company.model.News">
+        SELECT * FROM news LIMIT #{from},#{size}
+    </select>
+
+    <select id="dataCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM news
+    </select>
+</mapper>

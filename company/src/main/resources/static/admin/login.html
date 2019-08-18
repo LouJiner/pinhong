@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/colResizable-1.3.min.js"></script>
+	<script type="text/javascript" src="/js/common.js"></script>
+	<script src="/js/jquery/jquery.form.js"></script>
+	<script src="/js/moment/moment.min.js"></script>
+	<script src="/js/numeral/numeral.min.js"></script>
+	<script src="/js/numeral/chs.min.js"></script>
+	<script src="/js/common/base.js"></script>
+	<script src="/js/common/normal.js"></script>
+	<title>后台登陆</title>
+</head>
+<body>
+	<div id="login_top">
+		<div id="welcome">
+			欢迎使用
+		</div>
+		<div id="back">
+			<a href="/index.html">返回首页</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+			<a href="#">帮助</a>
+		</div>
+	</div>
+	<div id="login_center">
+		<div id="login_area">
+			<div id="login_form">
+				<form action="index.html" method="post">
+					<div id="login_tip">
+						用户登录&nbsp;&nbsp;UserLogin
+					</div>
+					<div><input type="text" class="username" id="userName"></div>
+					<div><input type="password" class="pwd" id="password"></div>
+					<div id="btn_area">
+						<input type="button" name="botton" id="sub_btn" value="登&nbsp;&nbsp;录"  onclick="login()">&nbsp;&nbsp;
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="login_bottom">
+	</div>
+<script>
+	function login() {
+         userName = document.getElementById("userName").value;
+		 password = document.getElementById("password").value;
+
+        $.post("/users/loginInspection",{"userName":userName,"password":password},function (result){
+            if(result==0){
+                location.href="index.html?name="+userName;
+			}
+            else if(result==1)alert("登录失败：密码不匹配");
+            else if(result==2)alert("登录失败：没有权限");
+            else alert("登录失败：账号不存在");
+		})
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zryx.company.mapper.UsersMapper">
+    <select id="getAllUsers" resultType="com.zryx.company.model.Users">
+        select * from users
+    </select>
+    <delete id="delUsers" >
+        DELETE FROM users WHERE userId = #{id}
+    </delete>
+    <delete id="addUsers" parameterType="com.zryx.company.model.Users">
+         INSERT INTO users VALUES(NULL,#{userName} ,#{password}  ,#{status})
+    </delete>
+    <select id="getPasswordByUserName" resultType="java.lang.String">
+        select password from users where userName = #{userName}
+    </select>
+    <select id="getStatusByUserName" resultType="int">
+        select status from users where userName = #{userName}
+    </select>
+
+    <select id="getUserByName" resultType="com.zryx.company.model.Users">
+          select * from users where userName=#{userName}
+    </select>
+
+    <update id="updUsers" parameterType="com.zryx.company.model.Users">
+        UPDATE users SET userName=#{userName},password=#{password}  ,status=#{status}   WHERE userId = #{userId}
+    </update>
+
+    <select id="getUsersByPage" resultType="com.zryx.company.model.Users">
+        SELECT * FROM users LIMIT #{from},#{size}
+    </select>
+
+    <select id="dataCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM users
+    </select>
+
+</mapper>

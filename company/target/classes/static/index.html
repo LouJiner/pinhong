@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品红公司</title>
+    <link href="/css/company.css" rel="stylesheet" type="text/css"/>
+    <script src="/js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="/js/jquery/jquery.form.js"></script>
+    <script src="/js/moment/moment.min.js"></script>
+    <script src="/js/numeral/numeral.min.js"></script>
+    <script src="/js/numeral/chs.min.js"></script>
+    <script src="/js/common/base.js"></script>
+    <script src="/js/common/normal.js"></script>
+</head>
+<body>
+<div id="main">
+    <div id="top">
+        <iframe style="margin-left:-10px;" scrolling="no" src="top.html" width="814" height="205" frameborder="0" ></iframe>
+    </div>
+    <div id="middle">
+        <div id="left">
+            <div id="news">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr>
+                        <td background="image/d02.jpg">
+                            <img src="image/d_r7_c1.jpg" width="101" height="34">
+                        </td>
+                        <td align="right" background="image/d02.jpg">
+                            <img src="image/d_r7_c14.jpg" width="94" height="34">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                    <!--newsData通过ajax动态显示从服务器获取的数据-->
+                    <tbody id="newsData" >
+                    </tbody>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                         <img src="image/d03.jpg"  width="350" height="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right">
+                            <a href="newsList.html"><img src="image/d_r11_c15.jpg" width="51" height="33" border="0">
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="pic">
+                <div>
+                    <img src="image/d_r11_5_r1_c1.jpg" width="264" height="63" border="0">
+                </div>
+                <div style="margin-top: -5px">
+                    <img src="image/d_r11_5_r1_c1.jpg" width="264" height="63" border="0">
+                </div>
+                <div style="margin-top: -5px">
+                    <img src="image/d_r11_5_r1_c1.jpg" width="264" height="63" border="0">
+                </div>
+                <div style="margin-top: -5px">
+                    <img src="image/d_r11_5_r1_c1.jpg" width="264" height="63" border="0">
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <table style="margin-top: -20px" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                <tr>
+                    <td background="image/d_r11_8.jpg">
+                        <img src="image/d_r13_c1.jpg" width="160" height="27">
+                    </td>
+                    <td align="right" background="image/d_r11_8.jpg">
+                        <a href="productList.html"><img src="image/d_r13_c21.jpg" width="66" height="27" border="0">
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                <tr id="picture1">
+
+                </tr>
+                <tr id="picture2">
+
+                </tr>
+                </tbody>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                <tr>
+                    <td width="25%" background="image/d_r11_11_r1_c15.jpg">
+                        <img src="image/d_r11_11_r1_c1.jpg" width="185" height="27">
+                    </td>
+                    <td width="25%" background="image/d_r11_11_r1_c15.jpg">
+                        &nbsp;
+                    </td>
+                    <td width="25%" background="image/d_r11_11_r1_c15.jpg">
+                        <img src="image/d_r11_11_r1_c21.jpg" width="160" height="27">
+                    </td>
+                    <td width="25%" align="right" background="image/d_r11_11_r1_c15.jpg">
+                        <a href="#"><img src="image/d_r11_11_r1_c30.jpg" width="63" height="27" border="0">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" colspan="2" bgcolor="#FCFCFC">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td width="28" height="29">
+                                    <img src="image/d_r11_12_r1_c1.jpg" width="28" height="32">
+                                </td>
+                                <td width="100" align="center" class="d06" style="font-weight: bold">
+                                    &nbsp;业务专线：
+                                </td>
+                                <td class="d06" style="font-weight: bold">
+                                    010-88888888
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="28" height="29">
+                                    <img src="image/d_r11_12_r1_c1.jpg" width="28" height="32">
+                                </td>
+                                <td width="100" align="center" class="d06">
+                                    &nbsp;
+                                    <span style="font-weight: bold">售后服务：</span>
+                                </td>
+                                <td class="d06" style="font-weight: bold">
+                                    010-66666666
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="28" height="29">
+                                    <img src="image/d_r11_12_r1_c1.jpg" width="28" height="32">
+                                </td>
+                                <td width="100" align="center" class="bold">
+                                    &nbsp;
+                                    <span class="d06" style="font-weight: bold">传&nbsp;&nbsp;&nbsp;&nbsp;真：</span>
+                                </td>
+                                <td class="d06" style="font-weight: bold">
+                                    010-88888888
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td width="50%" colspan="3" bgcolor="#FCFCFC">
+                        <table width="287" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td width="97" height="47" align="center">
+                                    <img src="image/f1.gif" width="90" height="33">
+                                </td>
+                                <td width="97" height="47" align="center">
+                                    <img src="image/f2.gif" width="88" height="33">
+                                </td>
+                                <td width="97" height="47" align="center">
+                                    <img src="image/f3.gif" width="90" height="33">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="97" height="47" align="center">
+                                    <img src="image/d_r11_13_r6_c13.jpg" width="90" height="33">
+                                </td>
+                                <td width="97" height="47" align="center">
+                                    <img src="image/d_r11_13_r1_c1.jpg" width="90" height="33">
+                                </td>
+                                <td width="97" height="47" align="center">
+                                    <img src="image/d_r11_13_r1_c7.jpg" width="88" height="33">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="right">
+            <div style="text-align: center">
+                <a href="productList.html"><img src="image/d_r11_6.jpg" width="186" height="42" border="0"></a>
+            </div>
+            <div id="demo"
+                 style="margin-top:-3px;overflow:hidden;height:622px;width:184px;background:#214984;color:#ffffff">
+                <div id="demo1">
+                    <!-- 定义图片 -->
+                </div>
+                <div id="demo2">
+                    <!-- 定义图片 -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <div id="bottom">
+    </div>
+</div>
+<script>
+    /**
+     * 商品图片向下滚动
+     */
+    function Marquee() {
+        //元素的offsetHeight是一种元素CSS高度的衡量标准，包括元素的边框、内边距和元素的水平滚动条（如果存在且渲染的话），是一个整数。
+        //scrollTop是它的滚动条的定边距，当滚动条在最顶端的时候scrollTop的值是0，此属性可写，scrollTop在减少的时候div当中的内容会向下移动
+        if (demo1.offsetTop - demo.scrollTop >= 0)
+            demo.scrollTop += demo2.offsetHeight;
+        else {
+            demo.scrollTop--;
+        }
+    }
+
+
+    $(function () {
+        initProducts();
+        initNews();
+        init4Product();
+    })
+
+    /**
+     * 初始化新闻函数
+     */
+    function initNews() {
+        $.post("initNewss").always(afterNewsInit);
+    }
+
+    /**
+     * 初始化商品函数
+     */
+    function initProducts() {
+        $.post("/product/initProduct1").always(afterProductsInit);
+    }
+
+    /**
+     * 初始化新闻回调函数
+     * @param result
+     */
+    function afterNewsInit(result) {
+        var obj = $.dealJSONObj(result);
+        if (!obj.code) {
+            var s = "";
+            var str = "<tr>\n    <td height='10' colspan='2'><a href='javascript:void(0)' onclick='details({0})' style=\"text-decoration: none\">{1}<span class='newsDate' style='float: right'>{2}</span> </a></td>\n</tr>";
+            /*  "<td align='center'><a href='javascript:void(0)' onclick='details(this)'></a></td>"*/
+
+            $.each(obj.data, function (k, v) {
+                s += str.formatStr(
+                    v.newsId,
+                    v.title,
+                    moment(v.writeDate, 'x').format("YYYY-MM-DD")
+                )
+            })
+            $("#newsData").empty();
+            $("#newsData").html(s);
+        } else {
+            alert(obj.msg);
+        }
+    }
+
+    /**
+     * 初始化商品回调函数
+     * @param result
+     */
+    function afterProductsInit(result) {
+        var obj = $.dealJSONObj(result);
+        if (!obj.code) {
+            var s = "";
+            var str = "<a href=\"productDetail.html?id={0}\">\n  <img src='/image/{1}' border='0' align='middle' width='100%' height='107'></img>\n</a>";
+            $.each(obj.data, function (k, v) {
+                s += str.formatStr(
+                    v.productId,
+                    v.picture
+                )
+            })
+            $("#demo1").empty();
+            $("#demo1").html(s);
+        } else {
+            alert(obj.msg);
+        }
+
+        var speed = 30;
+        var demo1 = document.getElementById("demo1");
+        var demo2 = document.getElementById("demo2");
+        var demo = document.getElementById("demo");
+        demo2.innerHTML = demo1.innerHTML;
+        demo.scrollTop = demo.scrollHeight;
+        var MyMar = setInterval(Marquee, speed);
+        demo.onmouseover = function () {
+            clearInterval(MyMar)
+        }
+        demo.onmouseout = function () {
+            MyMar = setInterval(Marquee, speed);
+        }
+    }
+
+    function setIframeHeight(iframe) {
+        if (iframe) {
+            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+            if (iframeWin.document.body) {
+                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+            }
+        }
+    };
+
+    function details(id) {
+        //$(a)就会将一个dom节点转换成jQuery节点
+        //就是使用js进入到查看页面
+        location.href="newsDetail.html?id="+id;
+    }
+
+    window.onload = function () {
+        setIframeHeight(document.getElementById('external-frame'));
+    };
+
+    function init4Product(){
+        var start = 0;
+        $.post("/product/selTop4Product",{"start":start},function(result){
+            //用来解析json
+            var obj = $.dealJSONObj(result);
+            //code会返回一个0或者非0的数字，如果0，使用!obj.code就返回true，表示查询成功
+            if (!obj.code) {
+                var s = "";
+                //创建了一个带有占位符的字符串
+                var str = "<td width=\"25%\" align=\"center\">\n    <a href=\"productDetail.html?id={0}\"><img src=\"image/{1}\" width=\"143\" height=\"112\" border=\"0\"></a>\n</td>" ;
+                //$.each就可以遍历集合，其中的v就相当于是一个product对象
+                $.each(obj.data, function (k, v) {
+                    s += str.formatStr(
+                        v.productId, //得到商品ID
+                        v.picture//商品图片
+                    )
+                })
+                $("#picture1").empty(); //$("#data")叫做jQuery的选择器，它是一个id选择器，用来得到id值为data的一个节点
+                $("#picture1").html(s);
+            } else {
+                alert(obj.msg);
+            }
+        })
+        start =4;
+        $.post("/product/selTop4Product",{"start":start},function(result){
+            //用来解析json
+            var obj = $.dealJSONObj(result);
+            //code会返回一个0或者非0的数字，如果0，使用!obj.code就返回true，表示查询成功
+            if (!obj.code) {
+                var s = "";
+                //创建了一个带有占位符的字符串
+                var str = "<td width=\"25%\" align=\"center\">\n    <a href=\"productDetail.html?id={0}\"><img src=\"image/{1}\" width=\"143\" height=\"112\" border=\"0\"></a>\n</td>" ;
+                //$.each就可以遍历集合，其中的v就相当于是一个product对象
+                $.each(obj.data, function (k, v) {
+                    s += str.formatStr(
+                        v.productId, //得到商品ID
+                        v.picture//商品图片
+                    )
+                })
+                $("#picture2").empty(); //$("#data")叫做jQuery的选择器，它是一个id选择器，用来得到id值为data的一个节点
+                $("#picture2").html(s);
+            } else {
+                alert(obj.msg);
+            }
+        })
+    }
+</script>
+</body>
+</html>
