@@ -1783,3 +1783,788 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2019-08-18 17:41:02,698 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
 2019-08-18 17:41:02,698 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
 2019-08-18 17:41:02,698 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2019-08-18 18:29:31,235 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-08-18 18:29:31,235 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product order by productId desc limit ?,4 
+2019-08-18 18:29:31,235 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product order by productId desc limit ?,4 
+2019-08-18 18:29:31,235 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-08-18 18:29:31,240 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:29:31,240 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:29:31,241 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
+2019-08-18 18:29:31,241 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer)
+2019-08-18 18:29:31,249 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2019-08-18 18:29:31,249 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:29:31,249 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2019-08-18 18:29:31,251 DEBUG (ProductController.java:26)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c1.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 4,
+    "serialNumber" : "v60",
+    "name" : "手机",
+    "brand" : "摩托罗拉",
+    "model" : "60",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c22.jpg",
+    "description" : "摩托罗拉 v60"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  } ]
+}
+2019-08-18 18:29:31,254 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2019-08-18 18:29:35,171 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select password from users where userName = ? 
+2019-08-18 18:29:35,172 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: luo(String)
+2019-08-18 18:29:35,181 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:35,182 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select status from users where userName = ? 
+2019-08-18 18:29:35,183 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: luo(String)
+2019-08-18 18:29:35,184 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:35,185 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select password from users where userName = ? 
+2019-08-18 18:29:35,185 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: luo(String)
+2019-08-18 18:29:35,187 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:40,484 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product 
+2019-08-18 18:29:40,486 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:29:40,488 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product order by productId desc limit ?,4 
+2019-08-18 18:29:40,489 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer)
+2019-08-18 18:29:40,492 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:29:40,482 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from news order by writeDate desc limit 0,8 
+2019-08-18 18:29:40,494 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:29:40,496 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select * from product order by productId desc limit ?,4 
+2019-08-18 18:29:40,497 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer)
+2019-08-18 18:29:40,497 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 7
+2019-08-18 18:29:40,498 DEBUG (ProductController.java:26)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : [ {
+    "productId" : 1,
+    "serialNumber" : "z01",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "g123",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c1.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 2,
+    "serialNumber" : "s05",
+    "name" : "摄像机",
+    "brand" : "三星",
+    "model" : "05",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c8.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 3,
+    "serialNumber" : "a08",
+    "name" : "数码相机",
+    "brand" : "爱国者",
+    "model" : "08",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c16.jpg",
+    "description" : "爱国者a08"
+  }, {
+    "productId" : 4,
+    "serialNumber" : "v60",
+    "name" : "手机",
+    "brand" : "摩托罗拉",
+    "model" : "60",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c22.jpg",
+    "description" : "摩托罗拉 v60"
+  }, {
+    "productId" : 5,
+    "serialNumber" : "e80",
+    "name" : "笔记本",
+    "brand" : "IBM",
+    "model" : "80",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c2.jpg",
+    "description" : "IBM5x系列"
+  }, {
+    "productId" : 6,
+    "serialNumber" : "sx100",
+    "name" : "摄像机",
+    "brand" : "松下",
+    "model" : "100",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c81.jpg",
+    "description" : "松下sx100"
+  }, {
+    "productId" : 7,
+    "serialNumber" : "k200",
+    "name" : "数码相机",
+    "brand" : "柯达",
+    "model" : "200",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c116.jpg",
+    "description" : "柯达200"
+  } ]
+}
+2019-08-18 18:29:40,501 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 5
+2019-08-18 18:29:40,501 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2019-08-18 18:29:49,881 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select password from users where userName = ? 
+2019-08-18 18:29:49,881 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: luo(String)
+2019-08-18 18:29:49,883 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:49,883 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select status from users where userName = ? 
+2019-08-18 18:29:49,884 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: luo(String)
+2019-08-18 18:29:49,886 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:49,886 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: select password from users where userName = ? 
+2019-08-18 18:29:49,887 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: luo(String)
+2019-08-18 18:29:49,889 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:52,301 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM news LIMIT ?,? 
+2019-08-18 18:29:52,302 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:29:52,305 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:29:52,306 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM news 
+2019-08-18 18:29:52,306 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:29:52,308 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:52,309 DEBUG (NewsController.java:37)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "newsId" : 67,
+      "title" : "一条新闻",
+      "content" : "新闻新闻新闻",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 68,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 69,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 71,
+      "title" : "桂林最好玩的地方",
+      "content" : "桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学",
+      "writeDate" : 1563840000000
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 5
+  }
+}
+2019-08-18 18:29:55,641 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM news LIMIT ?,? 
+2019-08-18 18:29:55,641 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:29:55,643 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:29:55,644 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM news 
+2019-08-18 18:29:55,644 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:29:55,645 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:29:55,646 DEBUG (NewsController.java:37)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "newsId" : 67,
+      "title" : "一条新闻",
+      "content" : "新闻新闻新闻",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 68,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 69,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 71,
+      "title" : "桂林最好玩的地方",
+      "content" : "桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学",
+      "writeDate" : 1563840000000
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 5
+  }
+}
+2019-08-18 18:30:01,409 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM news where newsId = ? order by newsId 
+2019-08-18 18:30:01,411 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 71(Integer)
+2019-08-18 18:30:01,413 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:01,413 DEBUG (NewsController.java:71)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "newsId" : 71,
+    "title" : "桂林最好玩的地方",
+    "content" : "桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学",
+    "writeDate" : 1563840000000
+  }
+}
+2019-08-18 18:30:11,807 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: DELETE FROM news WHERE newsId = ? 
+2019-08-18 18:30:11,807 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 71(Integer)
+2019-08-18 18:30:11,811 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 1
+2019-08-18 18:30:11,819 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM news LIMIT ?,? 
+2019-08-18 18:30:11,821 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:30:11,825 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:30:11,826 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM news 
+2019-08-18 18:30:11,826 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:11,828 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:11,829 DEBUG (NewsController.java:37)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "newsId" : 67,
+      "title" : "一条新闻",
+      "content" : "新闻新闻新闻",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 68,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 69,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 81,
+      "title" : "啊哈哈哈哈哈哈哈哈",
+      "content" : "新闻新闻新闻新闻新闻",
+      "writeDate" : 1564444800000
+    } ],
+    "pageCount" : 1,
+    "dataCount" : 4
+  }
+}
+2019-08-18 18:30:13,643 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:13,665 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:13,667 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:14,537 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:14,538 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:14,539 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:14,713 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:14,714 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:14,715 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:15,227 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:15,228 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:15,230 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:15,383 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:15,383 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:15,384 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:15,549 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:15,549 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:15,550 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:15,702 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:15,702 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:15,703 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:16,271 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:16,273 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:16,274 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:16,419 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:16,420 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:16,421 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:16,578 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:16,578 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:16,580 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:17,246 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:17,247 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:17,248 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:17,385 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:17,385 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:17,388 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:17,541 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:17,541 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:17,542 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:18,252 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:18,252 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:18,254 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:18,404 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:18,405 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:18,406 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:18,570 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:18,570 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:18,572 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:18,715 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:18,716 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:18,716 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:18,871 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:18,872 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:18,873 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:19,004 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:19,005 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:19,006 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:19,176 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:19,176 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:19,178 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:19,810 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:19,810 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:19,812 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:19,979 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:19,980 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:19,981 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:20,141 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:20,142 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:20,143 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:20,289 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:20,289 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:20,290 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:20,453 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:20,453 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:20,455 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:20,616 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:20,617 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:20,619 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:20,779 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:20,779 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:20,781 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:20,958 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:20,959 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:20,960 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:21,130 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:21,131 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:21,132 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:21,294 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:21,294 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:21,295 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:21,465 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:21,466 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:21,467 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:21,638 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:21,639 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:21,641 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:21,783 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:21,784 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:21,785 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:21,962 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:21,962 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:21,964 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:22,110 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:22,110 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:22,112 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:22,267 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:22,267 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:22,268 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:22,430 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:22,431 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:22,432 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:22,563 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:22,563 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:22,565 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:24,272 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:24,273 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:24,274 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:24,425 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:24,425 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:24,427 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:24,557 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:24,557 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:24,558 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:24,706 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: UPDATE news SET title=? ,content=? ,writeDate=? WHERE newsId = ? 
+2019-08-18 18:30:24,706 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 桂林最好玩的地方(String), 桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学桂林电子科技大学(String), 2019-07-23 00:00:00.0(Timestamp), 71(Integer)
+2019-08-18 18:30:24,707 DEBUG (BaseJdbcLogger.java:143)- <==    Updates: 0
+2019-08-18 18:30:25,678 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM news LIMIT ?,? 
+2019-08-18 18:30:25,679 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:30:25,681 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:30:25,682 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM news 
+2019-08-18 18:30:25,682 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:25,686 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:25,687 DEBUG (NewsController.java:37)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "newsId" : 67,
+      "title" : "一条新闻",
+      "content" : "新闻新闻新闻",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 68,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 69,
+      "title" : "新闻",
+      "content" : "新闻新闻n",
+      "writeDate" : 1563840000000
+    }, {
+      "newsId" : 81,
+      "title" : "啊哈哈哈哈哈哈哈哈",
+      "content" : "新闻新闻新闻新闻新闻",
+      "writeDate" : 1564444800000
+    } ],
+    "pageCount" : 1,
+    "dataCount" : 4
+  }
+}
+2019-08-18 18:30:37,090 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product LIMIT ?,? 
+2019-08-18 18:30:37,091 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:30:37,093 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:30:37,094 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM product 
+2019-08-18 18:30:37,094 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:37,097 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:37,099 DEBUG (ProductController.java:41)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "productId" : 1,
+      "serialNumber" : "z01",
+      "name" : "笔记本",
+      "brand" : "IBM",
+      "model" : "g123",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c1.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 2,
+      "serialNumber" : "s05",
+      "name" : "摄像机",
+      "brand" : "三星",
+      "model" : "05",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c8.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 3,
+      "serialNumber" : "a08",
+      "name" : "数码相机",
+      "brand" : "爱国者",
+      "model" : "08",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c16.jpg",
+      "description" : "爱国者a08"
+    }, {
+      "productId" : 4,
+      "serialNumber" : "v60",
+      "name" : "手机",
+      "brand" : "摩托罗拉",
+      "model" : "60",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c22.jpg",
+      "description" : "摩托罗拉 v60"
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 7
+  }
+}
+2019-08-18 18:30:41,388 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product WHERE productId=? 
+2019-08-18 18:30:41,389 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer)
+2019-08-18 18:30:41,391 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:41,392 DEBUG (ProductController.java:67)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "productId" : 4,
+    "serialNumber" : "v60",
+    "name" : "手机",
+    "brand" : "摩托罗拉",
+    "model" : "60",
+    "price" : 8000,
+    "picture" : "d_r11_10_r1_c22.jpg",
+    "description" : "摩托罗拉 v60"
+  }
+}
+2019-08-18 18:30:50,568 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product LIMIT ?,? 
+2019-08-18 18:30:50,569 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:30:50,571 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:30:50,572 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM product 
+2019-08-18 18:30:50,573 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:50,575 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:50,576 DEBUG (ProductController.java:41)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "productId" : 1,
+      "serialNumber" : "z01",
+      "name" : "笔记本",
+      "brand" : "IBM",
+      "model" : "g123",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c1.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 2,
+      "serialNumber" : "s05",
+      "name" : "摄像机",
+      "brand" : "三星",
+      "model" : "05",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c8.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 3,
+      "serialNumber" : "a08",
+      "name" : "数码相机",
+      "brand" : "爱国者",
+      "model" : "08",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c16.jpg",
+      "description" : "爱国者a08"
+    }, {
+      "productId" : 4,
+      "serialNumber" : "v60",
+      "name" : "手机",
+      "brand" : "摩托罗拉",
+      "model" : "60",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c22.jpg",
+      "description" : "摩托罗拉 v60"
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 7
+  }
+}
+2019-08-18 18:30:51,442 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product LIMIT ?,? 
+2019-08-18 18:30:51,442 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer), 4(Integer)
+2019-08-18 18:30:51,443 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2019-08-18 18:30:51,444 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM product 
+2019-08-18 18:30:51,444 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:51,446 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:51,446 DEBUG (ProductController.java:41)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 2,
+    "pageData" : [ {
+      "productId" : 5,
+      "serialNumber" : "e80",
+      "name" : "笔记本",
+      "brand" : "IBM",
+      "model" : "80",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c2.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 6,
+      "serialNumber" : "sx100",
+      "name" : "摄像机",
+      "brand" : "松下",
+      "model" : "100",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c81.jpg",
+      "description" : "松下sx100"
+    }, {
+      "productId" : 7,
+      "serialNumber" : "k200",
+      "name" : "数码相机",
+      "brand" : "柯达",
+      "model" : "200",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c116.jpg",
+      "description" : "柯达200"
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 7
+  }
+}
+2019-08-18 18:30:52,196 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product LIMIT ?,? 
+2019-08-18 18:30:52,196 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:30:52,198 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:30:52,199 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM product 
+2019-08-18 18:30:52,199 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:52,201 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:52,202 DEBUG (ProductController.java:41)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "productId" : 1,
+      "serialNumber" : "z01",
+      "name" : "笔记本",
+      "brand" : "IBM",
+      "model" : "g123",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c1.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 2,
+      "serialNumber" : "s05",
+      "name" : "摄像机",
+      "brand" : "三星",
+      "model" : "05",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c8.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 3,
+      "serialNumber" : "a08",
+      "name" : "数码相机",
+      "brand" : "爱国者",
+      "model" : "08",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c16.jpg",
+      "description" : "爱国者a08"
+    }, {
+      "productId" : 4,
+      "serialNumber" : "v60",
+      "name" : "手机",
+      "brand" : "摩托罗拉",
+      "model" : "60",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c22.jpg",
+      "description" : "摩托罗拉 v60"
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 7
+  }
+}
+2019-08-18 18:30:52,827 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product LIMIT ?,? 
+2019-08-18 18:30:52,828 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 4(Integer), 4(Integer)
+2019-08-18 18:30:52,829 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 3
+2019-08-18 18:30:52,830 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM product 
+2019-08-18 18:30:52,830 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:52,832 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:52,832 DEBUG (ProductController.java:41)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 2,
+    "pageData" : [ {
+      "productId" : 5,
+      "serialNumber" : "e80",
+      "name" : "笔记本",
+      "brand" : "IBM",
+      "model" : "80",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c2.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 6,
+      "serialNumber" : "sx100",
+      "name" : "摄像机",
+      "brand" : "松下",
+      "model" : "100",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c81.jpg",
+      "description" : "松下sx100"
+    }, {
+      "productId" : 7,
+      "serialNumber" : "k200",
+      "name" : "数码相机",
+      "brand" : "柯达",
+      "model" : "200",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c116.jpg",
+      "description" : "柯达200"
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 7
+  }
+}
+2019-08-18 18:30:55,054 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT * FROM product LIMIT ?,? 
+2019-08-18 18:30:55,054 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 0(Integer), 4(Integer)
+2019-08-18 18:30:55,056 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 4
+2019-08-18 18:30:55,057 DEBUG (BaseJdbcLogger.java:143)- ==>  Preparing: SELECT COUNT(*) FROM product 
+2019-08-18 18:30:55,057 DEBUG (BaseJdbcLogger.java:143)- ==> Parameters: 
+2019-08-18 18:30:55,059 DEBUG (BaseJdbcLogger.java:143)- <==      Total: 1
+2019-08-18 18:30:55,059 DEBUG (ProductController.java:41)- json===>{
+  "msg" : "查询成功",
+  "code" : 0,
+  "data" : {
+    "pageSize" : 4,
+    "pageNum" : 1,
+    "pageData" : [ {
+      "productId" : 1,
+      "serialNumber" : "z01",
+      "name" : "笔记本",
+      "brand" : "IBM",
+      "model" : "g123",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c1.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 2,
+      "serialNumber" : "s05",
+      "name" : "摄像机",
+      "brand" : "三星",
+      "model" : "05",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c8.jpg",
+      "description" : "IBM5x系列"
+    }, {
+      "productId" : 3,
+      "serialNumber" : "a08",
+      "name" : "数码相机",
+      "brand" : "爱国者",
+      "model" : "08",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c16.jpg",
+      "description" : "爱国者a08"
+    }, {
+      "productId" : 4,
+      "serialNumber" : "v60",
+      "name" : "手机",
+      "brand" : "摩托罗拉",
+      "model" : "60",
+      "price" : 8000,
+      "picture" : "d_r11_10_r1_c22.jpg",
+      "description" : "摩托罗拉 v60"
+    } ],
+    "pageCount" : 2,
+    "dataCount" : 7
+  }
+}
